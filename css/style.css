@@ -1,0 +1,58 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.h2 {
+    font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+    margin-left: 15%;
+}
+
+p,h3,h4{
+    margin-left: 16%;
+} 
+
+p {
+    background-color: white;
+    color: rgb(27, 27, 27);
+    line-height: normal;
+}
+
+.record_header {
+    display:flex
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #5587EA;
+    color: white;
+}
+
+img {
+    height: 12%;
+    width: 12%;
+    color: white;
+}
+
+.nav_inner {
+    width: 100%;
+}
+
+.nav_heading {
+    color: rgb(251, 255, 7);
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    max-width: 48rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left:  auto;
+}
