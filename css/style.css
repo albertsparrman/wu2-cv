@@ -1,17 +1,55 @@
+:root {
+    --background: url(/Images/light.png); 
+    --blue: #5587EA;
+    --text: rgb(88, 88, 88);
+    --boxes: #f7f7f7;
+    --shadow1: #e2e2e2;
+    --moon: url(/Images/darkmode2.svg);
+    --pog: rgb(187, 187, 187);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 html, body {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
 }
 
+
 .body {
-    background-image: url(/Images/London2.png); 
-    background-size: 300%;
+    background: var(--background);
+    background-size: 150%;
+    transition: background .16s;
+}
+
+
+
+button {
+    text-align: center;
+    background: var(--moon);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    margin-left: 78.4%;
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
 }
 
 h2 {
     font-family: 'Nunito', sans-serif;
-    color: #5587EA;
+    color: var(--blue);
     margin-left: 13%;
 }
 .h22{
@@ -34,22 +72,24 @@ p,h3,h4{
 
 h4 {
     line-height: 0%;
-    color: rgb(187, 187, 187);
+    color: var(--pog);
     padding: 0%;
     margin-left: 13%;
 }
 
 h3 {
-    color: rgb(88, 88, 88);
+    color: var(--text);
     font-size: 100%;
     margin-left: 13%;
+    transition: color .2s;
 }
 
 p {
-    color: rgb(88, 88, 88);
+    color: var(--text);
     line-height: normal;
     font-size: 95%;
     font-weight: lighter;
+    transition: color .2s;
 }
 
 .pog {
@@ -72,12 +112,11 @@ p {
     display: flex;
     align-items: center;
     background-color: #5587EA;
-    color: white;
+    color: rgb(255, 255, 255);
     position: sticky;
     top: 0%;
     width: 100%;
     box-shadow: 0rem 0rem 0.3rem #1f1f1f;
-        
 }
 
 .section {
@@ -123,50 +162,55 @@ h1 {
 
 .hr1 {
     width: 100%;
-    height: px;
+    height: 1px;
     margin-left: 0%;
-    background-color: #5587EA;
+    background-color: var(--blue);
     border: 1px solid;
     border-radius: 2px;
     margin-top: 0.5%;
+    transition: color .2s;
 }
 
 .hr2 {
     width: 183.5%;
-    height: px;
+    height: 1px;
     margin-left: 0%;
-    background-color: #5587EA;
+    background-color: var(--blue);;
     border: 1px solid;
     border-radius: 2px;
     margin-top: 0.5%;
+    transition: color .2s;
 }
 
 .flex {
     display: flex;
-    background-color: #ffffff;
+    background-color: var(--boxes);
     height: 0%;
     margin-bottom: 2%;
     border: 1px solid;
-    border-color: #ffffff;
+    border-color: var(--boxes);
     border-radius: 4px;
     width: 290px;
-    box-shadow: 0rem 0.1rem 0.3rem #e2e2e2;
+    box-shadow: 0rem 0.1rem 0.3rem var(--shadow1);
     margin-left: 15px;
+    transition: color .2s;
+    transition: box-shadow .2s;
 }
 
 
 
 h6 {
-    background-color: white;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    color: #5587EA;
+    color: var(--blue);;
     line-height: normal;
     font-size: 95%;
     font-weight: lighter;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5px;
+    transition: color .2s;
+    transition: background-color .2s;
 }
 
 
@@ -204,16 +248,19 @@ h6 {
 
 
 .main {
-    background-color: #ffffff;
+    background-color: var(--boxes);
     height: 1%;
     margin-bottom: 1%;
     border: 1px solid;
-    border-color: #ffffff;
+    border-color: var(--boxes);
     border-radius: 8px;
     width: 320px;
-    box-shadow: 0rem 0.1rem 0.8rem #e2e2e2;
+    box-shadow: 0rem 0.1rem 0.8rem var(--shadow1);
     margin-left: 5%;
     margin-top: 2.5%;
+    transition: background-color .2s;
+    transition: border-color .2s;
+    transition: box-shadow .2s;
 }
 
 
@@ -246,43 +293,40 @@ h6 {
 
 .i {
     display: flex;
-    background-color: #ffffff;
+    background-color: var(--boxes);
     height: 0%;
     margin-bottom: 20px;
     border: 1px solid;
-    border-color: #ffffff;
+    border-color: var(--boxes);
     border-radius: 4px;
     width: 290px;
-    box-shadow: 0rem 0.1rem 0.3rem #e2e2e2;
+    box-shadow: 0rem 0.1rem 0.3rem var(--shadow1);
     margin-left: 15px;
+    transition: background-color .2s;
+    transition: border-color .2s;
+    transition: box-shadow .2s;
 }
 
 .ree {
-    position: absolute;
-    bottom: 56px;
-    left: 0px;
+    color: rgb(200, 200, 200);
+    margin: 0 0 1em;
 }
 
 .eee{
-    position: absolute;
-    bottom: 24px;
-    left: 0px;
+    color: rgb(200, 200, 200);
+    margin: 0;
 }
 
 .link {
     text-decoration: none;
-    color: rgb(88, 88, 88);
-}
-
-.ty {
-    width: 100%;
-    margin-bottom: 0%;
-    padding-bottom: 0;
+    color: rgb(200, 200, 200);
 }
 
 .box {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-bottom: 0px;
+    background-color: #1f1f1f;
+    margin-top: 12%;
+    padding: 30px;
+    width: 100%;
+    border-top: 3px solid;
+    border-color: #5587EA;
 }
