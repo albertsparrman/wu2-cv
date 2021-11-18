@@ -45,6 +45,7 @@ button {
     margin-left: 78.4%;
     background-color: transparent;
     border-color: rgb(255, 255, 255);
+    transition: background .2s;
 }
 
 h2 {
