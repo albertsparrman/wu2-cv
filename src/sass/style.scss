@@ -1,0 +1,26 @@
+@use "reset";
+
+$base-size: 1rem;
+
+body {
+    max-width: min(80ch, 100vw - 1rem);
+    margin-inline: auto;
+    background-color: rgb(255, 0, 166);
+}
+
+nav > ul{
+    display: flex;
+    gap: $base-size;
+    list-style: none;
+    padding: 0;
+}
+
+nav a:hover {
+    color: brown;
+}
+
+picture > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
