@@ -1,18 +1,62 @@
 @use "reset";
 
-$base-size: 1rem;
-
 body {
-    max-width: min(80ch, 100vw - 1rem);
-    margin-inline: auto;
-    background-color: rgb(255, 0, 166);
+    background-color: rgb(239, 239, 239);
 }
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f;
+    color: white;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    width: 215px;
+    font-size: 16px;
+    color: white;
+    fill: white; 
+    text-decoration: none;
+}
+
+
+
+.logotext {
+    margin-top: -19%;
+}
+
+.logotextfield {
+    padding-left: 10px;
+}
+
+nav {
+    position: sticky;
+    top: 0%;
+    background-color: #5587EA; 
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
 
 nav > ul{
     display: flex;
-    gap: $base-size;
+    justify-content: space-evenly;
     list-style: none;
     padding: 0;
+    margin: 0;
+}
+nav a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
 }
 
 nav a:hover {

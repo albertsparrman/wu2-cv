@@ -35,11 +35,11 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+    
     min-height: 100vh;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
-    /* 🟣 Set base font-family */
-    font-family: 'Nunito', sans-serif;
+    font-family: Nunito, sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -55,7 +55,7 @@ picture,
 /* 🟣 Add svg */
 svg {
     display: block;
-    max-width: 100%;
+    width: 75px;
 }
 
 /* 🟣 Ensure images with a width attr responsively resize */
